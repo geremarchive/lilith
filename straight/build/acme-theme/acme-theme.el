@@ -1,1 +1,0 @@
-/home/gmk/.emacs.d/straight/repos/acme-emacs-theme/acme-theme.el
