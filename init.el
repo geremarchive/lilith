@@ -1,7 +1,7 @@
 ;; --- Geremachek's Emacs Configuration --- ;;
 
-(load-file "toggles.el")
-(load-file "keybinds.el")
+(load-file "~/.emacs.d/toggles.el")
+(load-file "~/.emacs.d/keybinds.el")
 
 ;; straight.el & package managment
 

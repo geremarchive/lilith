@@ -14,27 +14,25 @@
 
 (global-set-key (kbd "C-c C-e") 'eval-buffer) ;; Evaluate the buffer
 
-;; The split the window and focus the right split
+;; Window splitting
 
-(defun focused-right ()
-  (interactive)
-  (split-window-right)
-  (other-window 1))
-
-(global-set-key (kbd "C-c C-s") 'focused-right)
+(global-set-key (kbd "C-c C-s") 'split-window-right)
+(global-set-key (kbd "C-c C-b") 'split-window-below)
 
 ;; Open a terminal in a split
 
 (defun split-term ()
   (interactive)
-  (focused-right)
+  (split-window-right)
   (bash-session))
 
 (global-set-key (kbd "C-c C-y") 'split-term)
 
-;; Kill and close
+;; Shutting things down
 
 (global-set-key (kbd "C-c C-k") 'kill-buffer-and-window)
+(global-set-key (kbd "C-c C-c") 'delete-window)
+(global-set-key (kbd "C-c C-o") (lambda () (interactive) (other-window 1)))
 
 ;; Input Modes
 
