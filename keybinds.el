@@ -8,16 +8,16 @@
   (interactive)
   (term "/bin/bash"))
 
-(global-set-key (kbd "C-c C-t") 'bash-session) ;; Open a new terminal session
+(global-set-key (kbd "C-c t") 'bash-session) ;; Open a new terminal session
 
 ;; Common tasks
 
-(global-set-key (kbd "C-c C-e") 'eval-buffer) ;; Evaluate the buffer
+(global-set-key (kbd "C-c e") 'eval-buffer) ;; Evaluate the buffer
 
 ;; Window splitting
 
-(global-set-key (kbd "C-c C-s") 'split-window-right)
-(global-set-key (kbd "C-c C-b") 'split-window-below)
+(global-set-key (kbd "C-c s") 'split-window-right)
+(global-set-key (kbd "C-c b") 'split-window-below)
 
 ;; Open a terminal in a split
 
@@ -26,14 +26,14 @@
   (split-window-right)
   (bash-session))
 
-(global-set-key (kbd "C-c C-y") 'split-term)
+(global-set-key (kbd "C-c y") 'split-term)
 
 ;; Shutting things down
 
-(global-set-key (kbd "C-c C-k") 'kill-buffer-and-window)
-(global-set-key (kbd "C-c C-c") 'delete-window)
-(global-set-key (kbd "C-c C-o") (lambda () (interactive) (other-window 1)))
+(global-set-key (kbd "C-c k") 'kill-buffer-and-window)
+(global-set-key (kbd "C-c c") 'delete-window)
 
 ;; Input Modes
 
-(global-set-key (kbd "C-c C-i") 'set-input-method)
+(global-set-key (kbd "C-c i") 'set-input-method)
+

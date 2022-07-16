@@ -24,3 +24,8 @@
 (load-theme 'acme t)
 
 (setq acme-theme-black-fg t)
+
+;; Time
+
+(setq display-time-format "{ %H:%M }")
+(display-time)
